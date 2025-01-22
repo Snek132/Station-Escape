@@ -16,35 +16,31 @@ The game consists of a single Python script that implements the entire gameplay.
     Defines the initial state of the game, including:
     inventory: A list to store collected items.
     game_state: A dictionary holding:
-    oxygen_level
     ethics_score
-    location
     endings: Different narrative endings based on player choices.
  
   
   Functions
 
-    print_slow(text): Prints text character by character for a dramatic effect.
-    end_game(ending_type): Manages game endings and displays corresponding messages.
-    examine_room(): Allows players to explore the starting room and collect items.
-    clear_debris(): Clears debris using tools found in the game.
-    explore_further(): Handles exploration leading to escape pods.
-    repair_terminal(): Repairs the communication terminal and presents choices.
-    follow_crew_member(): Follows a crew member's advice for survival.
-    navigate_escape_pods(): Concludes the game based on the player's final choice.
-    investigate_core(): Investigates the malfunctioning AI core.
-    start_game(): Initializes the game and presents the first choices.
+    Various functions are used, such as
+
+    print_slow() which types out a message slowly to fit the environment,
+
+    and functions for each part of the story, allowing the user to choose their path based on the next function in the flow of the story.
 
     
 Running the Game
 
+    Download the files from this repository.
     Open a terminal or command prompt.
     Navigate to the directory containing the script.
-    Execute the following command:
-    python allcode.py
+    Execute the following command: python allcode.py
+    
+    or Open the 'allcode.py' file from a file manager.
 
 
 Gameplay
 
     Players will interact with the game by making choices that lead to various outcomes.
-        The game can be exited at any time by typing "stop".
+    At various points, the game will prompt user input and provide two paths. They can be selected through inputting either '1' or '2'.
+    The game can be exited at any time by typing "stop".
