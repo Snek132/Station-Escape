@@ -2,6 +2,7 @@ import random
 import time
 import sys
 
+#imports necessary libraries
 
 
 
@@ -32,7 +33,7 @@ game_state = {
   }
 }
 
-
+#sets the states of different settings at the start of the game
 
 
 
@@ -137,7 +138,7 @@ def examine_room():
        end_game("short")
    else:
        print_slow("Invalid choice. Try again.")
-
+#makes the player choose between two options
 
 
 
@@ -160,6 +161,7 @@ def clear_debris():
       else:
            print_slow("Invalid choice. Try again.")
            clear_debris()
+#makes the player choose between two options
 
 
       while True:
@@ -177,6 +179,7 @@ def clear_debris():
       print_slow("Without tools, you're trapped. The vent floor caves in...")
       end_game("failure")
 
+#makes the player choose between two options
 
 
 
@@ -239,13 +242,14 @@ def repair_terminal():
       else:
            print_slow("Invalid choice. Try again.")
            repair_terminal()
+#makes the player choose between two options twice
 
 
   else:
       print_slow("Without the necessary tools, you can't repair the terminal. The AI core detects unwanted interference and locks down the room. You have no food, no water, and no way out.")
       end_game("failure")
 
-
+#displays a loss
 
 
 
@@ -270,7 +274,7 @@ def follow_crew_member():
       print_slow("The path to the escape pods goes through a low-oxygen area. You suffocate before you can reach them.")
       end_game("failure")
 
-
+#checks the players inventory before letting them continue
 
 
 
@@ -303,6 +307,8 @@ def navigate_escape_pods():
        print_slow("Invalid choice. Try again.")
        navigate_escape_pods()
 
+#makes the player choose between two options
+
 
 
 
@@ -334,6 +340,7 @@ def investigate_core():
        print_slow("Invalid choice. Try again.")
        investigate_core()
 
+#makes the player choose between two options
 
 
 
@@ -356,6 +363,7 @@ def start_game():
   print_slow("\nYou wake up in a damaged room. Alarms are blaring...")
   print_slow("A distorted voice crackles over the comm system...")
 
+#introduction text
 
 
 
@@ -385,6 +393,7 @@ def start_game():
       else:
           print_slow("Invalid choice. Try again.")
 
+#makes the player choose between two options
 
 
 
@@ -402,3 +411,4 @@ def start_game():
 
 if __name__ == "__main__":
   start_game()
+#starts the game
