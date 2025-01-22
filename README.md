@@ -34,12 +34,17 @@ The game consists of a single Python script that implements the entire gameplay.
     navigate_escape_pods(): Concludes the game based on the player's final choice.
     investigate_core(): Investigates the malfunctioning AI core.
     start_game(): Initializes the game and presents the first choices.
-    Running the Game
+
+    
+Running the Game
+
     Open a terminal or command prompt.
     Navigate to the directory containing the script.
     Execute the following command:
-    python your_script_name.py
-    Replace your_script_name.py with the name of your Python file.
-    Gameplay
+    python allcode.py
+
+
+Gameplay
+
     Players will interact with the game by making choices that lead to various outcomes.
-    The game can be exited at any time by typing "stop".
+        The game can be exited at any time by typing "stop".
